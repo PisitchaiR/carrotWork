@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+@font-face{
+    src: url(/font/3270-Medium\ 500.ttf);
+    font-family: ibm;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right,#C1B4EB, #CAE1FB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_bar{
+    width: 83.33vw;
+    margin: 3rem auto;
+    border-radius: 10rem;
+    background-color: white;
+}
+.flex-container{
+    margin: 0 5rem 0 5rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+a{
+    color: #707070;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    margin-left: 2rem;
+}
+.carrotwork{
+    margin: auto ;
+    font-size: 7.5rem;
+    font-family: ibm;
+    color: white;
+}
