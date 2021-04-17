@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login page</title>
+    <link rel="stylesheet" href="css/singup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <nav>
+        <div class="flex-container">
+            <a href="index.html">home</a>
+            <menu>
+                <ul>
+                    <li><a href="addwork.html">add work</a></li>
+                    <li><a href="timeline.html">timeline</a></li>
+                    <li><a href="sign-up.html">sign up</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </menu>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Sign up</h1>
+        <input type="text" placeholder="student id">
+        <input type="text" placeholder="name">
+        <input type="password" name="" id="" placeholder="password">
+        <footer>
+            <button class="button success">Submit</button>
+        </footer>
+    </section>
+    <script>
+        var animateButton = function (e) {
+            e.preventDefault;
+            //reset animation
+            e.target.classList.remove("animate");
+
+            e.target.classList.add("animate");
+
+            e.target.classList.add("animate");
+            setTimeout(function () {
+                e.target.classList.remove("animate");
+            }, 6000);
+        };
+
+        var classname = document.getElementsByClassName("button");
+
+        for (var i = 0; i < classname.length; i++) {
+            classname[i].addEventListener("click", animateButton, false);
+        }
+
+    </script>
 </body>
+
 </html>

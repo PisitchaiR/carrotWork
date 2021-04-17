@@ -7,8 +7,11 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right,#C1B4EB, #CBE6FD);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +74,7 @@ input {
     margin: .5rem;
     border: none;
     border-radius: 1rem;
-    padding: .5rem;
+    padding: .5rem 1rem;
 }
 input:focus{
     outline-style: none;
@@ -92,4 +95,8 @@ footer a:hover{
 }
 footer i:hover {
     transform: scale(1.2);
+}
+
+h1 {
+  font-size: 1.5em;
 }
